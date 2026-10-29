@@ -1,0 +1,21 @@
+name: Bug report
+description: Something is broken or unfair
+labels: [bug]
+body:
+  - type: input
+    id: device
+    attributes: { label: Device and browser, placeholder: "e.g. Pixel 8, Chrome 130" }
+    validations: { required: true }
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Controls (keyboard), Controls (touch), Combat, Boss fight, Level geometry, Audio, Menus/HUD, Saves, Performance, Other]
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What happened?, description: Include the level, boss and phase if relevant. }
+    validations: { required: true }
+  - type: textarea
+    id: steps
+    attributes: { label: Steps to reproduce }

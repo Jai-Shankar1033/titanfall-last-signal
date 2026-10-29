@@ -1,0 +1,16 @@
+{
+  "name": "titanfall-last-signal",
+  "version": "0.1.0",
+  "description": "TITANFALL: LAST SIGNAL - a three-level pixel-art run-and-gun game in a single HTML file.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "npx --yes serve . -l 3000",
+    "test": "node tests/run-all.js",
+    "screenshots": "node tools/screenshots.js"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "^0.1.0"
+  },
+  "engines": { "node": ">=18" }
+}
